@@ -53,6 +53,22 @@ Pretrained and fine-tuned weights are provided in this repository.
 
 ---
 
+## Stratified CNV Frequency Analysis
+
+The notebook `Training_Frequency_Stratified_CNV_Performance.ipynb` reproduces the stratified evaluation described in Supplementary Table S7.
+
+This analysis:
+- Computes per-exon CNV frequency in the 300-sample training set
+- Stratifies true CNV test windows into:
+  - Never (0%)
+  - Rare (0–5%)
+  - Often (5–50%)
+  - Majority (>50%)
+- Reports CNV, DEL, and DUP recall per stratum
+
+
+---
+
 ## Reproducing Results
 
 1. Obtain ECOLE exon-level matrices and labels:
